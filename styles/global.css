@@ -1,0 +1,121 @@
+:root {
+  --red: #E50914;
+  --black: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* elementos base */
+body {
+  background-color: var(--black);
+  font-family: 'Poppins', sans-serif;
+  color: #AAA;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.logo {
+  margin-left: 5px;
+  color: var(--red);
+  font-family: 'Poppins', 700 bold;
+  font-size: 40px;
+}
+
+.menus > a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+.menus > a:hover {
+  color: #FFF;
+}
+
+/* Fime Principal */
+.movie-top {
+  font-size: 16px;
+  background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), 
+  url('../assets/Breaking_Bad.jpg');
+
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+} 
+.movie-top .description {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.title {
+  margin-top: 15%px;
+  font-size: 40px;
+}
+.button {
+  background-color: rgba(0,0,0,.50);
+  border: none;
+  color: #AAA;
+  border-radius: 5px;
+
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+
+}
+.button:hover {
+  background-color: #AAA;
+  color: rgba(0,0,0,.50);
+} 
+.button i {
+  margin-right: 8px;
+}
+
+.movie-top .container {
+  display: flex;
+  flex-direction: column;
+
+  width: 70%;
+  margin-top: 100px;
+  align-items: baseline;
+}
+
+.box-filme{
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 700px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button {
+    margin-top: 5px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .description {
+    width: 50%;
+  }
+}
